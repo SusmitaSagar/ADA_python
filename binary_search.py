@@ -6,8 +6,12 @@ def search(arr,low,high,key):
         return mid  
     elif arr[mid]>key: #if key is less than mid elemnt(compare)
         return search(arr,low,mid-1,key) # call thr recursion fn
-    else:
+    elif arr[mid]>key:
         return search(arr,mid+1,high,key)   #key is greater than mid elemnt
+    else:
+        return ("element is not present")    
 ar=[1,2,5,6,8,9]
-tar=8
+print("my arr is",ar)
+#tar=8
+tar=int(input("enter target value"))
 print(search(ar,1,9,tar))
