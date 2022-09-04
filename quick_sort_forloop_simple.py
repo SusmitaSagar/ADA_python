@@ -29,10 +29,10 @@ n = len(list1)
 quicksort(list1,0,n-1)  
 print(list1)   
 #for taking input from user
-"""n = int(input("enter the length of list:")) 
+n = int(input("enter the length of list:")) 
 list1 = [int(input()) for x in range(n)]
 quicksort(list1,0,n-1)
-print("sorted list is",list1)"""
+print("sorted list is",list1)
 
 
 
