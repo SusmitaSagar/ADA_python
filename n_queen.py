@@ -1,4 +1,4 @@
-
+#n queen problem. (no column,row,diagonal element should be there)
 possible_boards = 0
 result = []
 def print_board(board):
