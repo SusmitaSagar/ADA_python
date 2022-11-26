@@ -5,24 +5,19 @@ class Node:
         self.val = data
  
 # A function to do postorder tree traversal
-def Postorder(root):
-    if root:
-        # First recur on left child
+def Postorder(root):   #Left Right Node
+    if root: 
         Postorder(root.left)
- 
-        # the recur on right child
         Postorder(root.right)
- 
-        # now print the data of node
         print(root.val),
- 
-def Preorder(root):
+  
+def Preorder(root):   #Node left right
     if root:
         print(root.val),
         Preorder(root.left)
         Preorder(root.right)
-
-def Inorder(root):
+ 
+def Inorder(root):    #left node right
     if root:
         Inorder(root.left)
         print(root.val),
