@@ -27,10 +27,6 @@ def Inorder(root):
         Inorder(root.left)
         print(root.val),
         Inorder(root.right)
-       
-                
-
-
 
 # Driver code
 if __name__ == "__main__":
