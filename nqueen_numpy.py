@@ -1,16 +1,16 @@
 import numpy as np
 
 def validate(bo,n):
-    for row in range(0,n):
+    for row in range(0,n):    #sum of rows 1 or less
         if sum(bo[row,]) >1:
             return False
 
-    for col in range(0,n):
+    for col in range(0,n):      #sum of elemnts of row >1
         if sum(bo[:,col])>1:
             return False        
 
 
-    diags = [bo[::-1,:].diagonal(i) for i in range (-n+1,n)]
+    diags = [bo[::-1,:].diagonal(i) for i in range (-n+1,n)]     #sum of diagonal pos,neg diag = 1
     diags.extend(bo.diagonal(i) for i in range (n-1,-n,-1))
     for x in diags:
         if len(x)>1:
